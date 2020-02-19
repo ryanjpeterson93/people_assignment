@@ -1,2 +1,5 @@
 <h1>People#show</h1>
-<p>Find me in app/views/people/show.html.erb</p>
+<h1><%= @person.title %></h1>
+<h4><%= @person.author %></h1>
+<p><%= @person.body %></p>
+<%= link_to 'Back', people_path %>

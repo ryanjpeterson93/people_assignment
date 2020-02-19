@@ -1,2 +1,5 @@
-<h1>People#index</h1>
-<p>Find me in app/views/people/index.html.erb</p>
+<h1>People</h1>
+<% @people.each do |person| %>
+  <h2><%= person.first_name%></h2>
+  <%= link_to 'View Person', people_path(@people) %>
+<% end %>
