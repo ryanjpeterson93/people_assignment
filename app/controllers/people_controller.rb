@@ -1,11 +1,13 @@
 class PeopleController < ApplicationController
 
+before_action :set_person, only: [:show, :edit, :update, :destroy]
+
   def index
     @people = Person.all
   end
 
   def show
-    @person = Person.find(params[:id])
+    # @person = Person.find(params[:id])
   end
 
   def new
@@ -23,11 +25,11 @@ class PeopleController < ApplicationController
   end
  
   def edit
-    @person = Person.find(params[:id])
+    # @person = Person.find(params[:id])
   end
 
   def update
-    @person = Person.find(params[:id])
+    # @person = Person.find(params[:id])
   
     if @person.update(people_params)
       redirect_to people_path
@@ -37,12 +39,15 @@ class PeopleController < ApplicationController
   end
 
   def destroy
-    Person.find(params[:id]).destroy
+    # Person.find(params[:id]).destroy
     redirect_to people_path
   end
 
   private
- 
+    def set_person
+      @person = Person.find(params[:id])
+    end
+      
     def people_params
       params.require(:person).permit(:first_name, :last_name, :age, :hair_color, :eye_color, :gender, :alive)
     end
