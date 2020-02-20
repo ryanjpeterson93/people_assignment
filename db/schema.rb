@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_02_19_224716) do
     t.string "hair_color"
     t.string "eye_color"
     t.string "gender"
-    t.boolean "alive"
+    t.string "alive"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
