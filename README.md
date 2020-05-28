@@ -1,4 +1,4 @@
-# Ruby Lunch Lady
+# Ruby People App
 
 ### Assignment given as part of the DevPoint Labs Full Stack Web Development Course
 
