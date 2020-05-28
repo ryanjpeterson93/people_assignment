@@ -1,24 +1,20 @@
-# README
+# Ruby Lunch Lady
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Assignment given as part of the DevPoint Labs Full Stack Web Development Course
 
-Things you may want to cover:
+#### Week 2
 
-* Ruby version
 
-* System dependencies
+Basic Objectives:
 
-* Configuration
+-Create a new rails app
 
-* Database creation
+-Create a person model with the columns of: first_name, last_name, age, hair_color, eye_color, gender, alive (Determine what column datatypes each should be)
 
-* Database initialization
+-Create a people controller with all of the CRUD actions.
 
-* How to run the test suite
+-Go into your routes file and make sure you have a root route and you have all URL's for the people controller. 
 
-* Services (job queues, cache servers, search engines, etc.)
+-Fill out your whole controller so that all the CRUD actions work
 
-* Deployment instructions
-
-* ...
+-Fill out all of your views make sure they all work as expected
